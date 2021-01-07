@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monkey-player-api", "monkey-player-api\monkey-player-api.csproj", "{3E81AC42-61B3-4C04-A087-019810F679AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E81AC42-61B3-4C04-A087-019810F679AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E81AC42-61B3-4C04-A087-019810F679AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E81AC42-61B3-4C04-A087-019810F679AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E81AC42-61B3-4C04-A087-019810F679AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1417424B-7A8A-4441-932A-5C4A050BE308}
+	EndGlobalSection
+EndGlobal
