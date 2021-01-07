@@ -1,0 +1,86 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\vmykh2\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Domain\\MVNormanNativeKit.Domain.csproj",
+      "projectName": "MVNormanNativeKit.Domain",
+      "projectPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Domain\\MVNormanNativeKit.Domain.csproj",
+      "packagesPath": "C:\\Users\\vmykh2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\vmykh2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj": {
+              "projectPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
