@@ -1,18 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WgimXoNwqFYe1jdTFn+JknA3kPaDBKDAg1c/2U+x2zhXXEGJgWbY/IWCryAoDY9kteYKfl3Kxeps5mv9Yziq4Q==",
-  "success": false,
+  "dgSpecHash": "ADoXoJnsgDcyWXRXJvf0oZXMUBX3jyiBHO6F7ZkOuR0cw1iUQ3HVUSpyQiMBxqYK5EBhzp17PWyVSQzlwCnd5g==",
+  "success": true,
   "projectFilePath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Domain\\MVNormanNativeKit.Domain.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

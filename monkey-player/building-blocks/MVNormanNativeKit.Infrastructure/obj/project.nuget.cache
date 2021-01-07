@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "Ahe8O5C8lxmDb6ddtgDsM5hZP9DQIBqwAcRC6/Dpmcb1sYIRuu5wmepuBTbl7EfFRGD+40ioQ4jXO3qKN81yWA==",
-  "success": false,
+  "dgSpecHash": "kIpRA/AsOnqh7TBSIaEO0ByNe1K7vFwcr1qg98vQZvBK0HySykiYNmQyRQFSo5rH336TeSvS15Xp64Hk9p6wyQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure\\MVNormanNativeKit.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vmykh2\\.nuget\\packages\\elasticsearch.net\\7.6.1\\elasticsearch.net.7.6.1.nupkg.sha512",
@@ -131,15 +131,5 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }

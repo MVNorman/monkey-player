@@ -1,0 +1,17 @@
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.deps.json
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.runtimeconfig.json
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.runtimeconfig.dev.json
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.pdb
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Domain.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Domain.pdb
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.pdb
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.csproj.CopyComplete
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.pdb
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Infrastructure.Data\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Infrastructure.Data.genruntimeconfig.cache

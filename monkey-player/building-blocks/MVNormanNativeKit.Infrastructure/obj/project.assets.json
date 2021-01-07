@@ -1877,13 +1877,23 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj": "1.0.0"
+          "MVNormanNativeKit.Tools": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MVNormanNativeKit.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/MVNormanNativeKit.Domain.dll": {}
+        }
+      },
+      "MVNormanNativeKit.Tools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MVNormanNativeKit.Tools.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVNormanNativeKit.Tools.dll": {}
         }
       }
     }
@@ -6186,6 +6196,11 @@
       "type": "project",
       "path": "../MVNormanNativeKit.Domain/MVNormanNativeKit.Domain.csproj",
       "msbuildProject": "../MVNormanNativeKit.Domain/MVNormanNativeKit.Domain.csproj"
+    },
+    "MVNormanNativeKit.Tools/1.0.0": {
+      "type": "project",
+      "path": "../MVNormanNativeKit.Tools/MVNormanNativeKit.Tools.csproj",
+      "msbuildProject": "../MVNormanNativeKit.Tools/MVNormanNativeKit.Tools.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6355,16 +6370,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Tools\\MVNormanNativeKit.Tools.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.1.28" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MVNormanNativeKit.Infrastructure.Data\MVNormanNativeKit.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\MVNormanNativeKit.Infrastructure\MVNormanNativeKit.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
