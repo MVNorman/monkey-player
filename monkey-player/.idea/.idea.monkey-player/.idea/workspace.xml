@@ -22,34 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12046ce-86d8-43d7-a0e7-a16e65a88f42" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/MVNormanNativeKit.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/MVNormanNativeKit.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Bus.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Bus.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Bus.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Bus.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/MVNormanNativeKit.Infrastructure.Bus.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/MVNormanNativeKit.Infrastructure.Bus.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/MVNormanNativeKit.Infrastructure.Bus.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/MVNormanNativeKit.Infrastructure.Bus.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/MVNormanNativeKit.Infrastructure.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/MVNormanNativeKit.Infrastructure.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Data.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Data.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Data.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.Data.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/MVNormanNativeKit.Infrastructure.Data.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/MVNormanNativeKit.Infrastructure.Data.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/MVNormanNativeKit.Infrastructure.Data.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/MVNormanNativeKit.Infrastructure.Data.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/MVNormanNativeKit.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/MVNormanNativeKit.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/MVNormanNativeKit.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/MVNormanNativeKit.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/MVNormanNativeKit.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/MVNormanNativeKit.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Tools.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Tools.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/MVNormanNativeKit.Tools.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/MVNormanNativeKit.Tools.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.props" afterDir="false" />
-    </list>
+    <list default="true" id="c12046ce-86d8-43d7-a0e7-a16e65a88f42" name="Default Changelist" comment="Upgrade packages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +30,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/Extensions/ByteArrayExtensions.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1mkdZBfbuytEEKTBab2bLzAMAjp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,8 +89,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610041580833</updated>
-      <workItem from="1610041586023" duration="300000" />
+      <workItem from="1610041586023" duration="655000" />
     </task>
+    <task id="LOCAL-00001" summary="Upgrade packages">
+      <created>1610042240894</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610042240894</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +119,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Upgrade packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade packages" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610041659447">
