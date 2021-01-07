@@ -1,9 +1,0 @@
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.deps.json
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.dll
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\bin\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.pdb
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.csprojAssemblyReference.cache
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.AssemblyInfoInputs.cache
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.AssemblyInfo.cs
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.csproj.CoreCompileInputs.cache
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.dll
-C:\Users\vmykh2\source\repos\monkey-player\monkey-player\building-blocks\MVNormanNativeKit.Tools\obj\Debug\netcoreapp3.1\MVNormanNativeKit.Tools.pdb
