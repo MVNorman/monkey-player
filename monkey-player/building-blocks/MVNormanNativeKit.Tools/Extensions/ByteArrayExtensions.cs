@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -32,7 +33,7 @@ namespace MVNormanNativeKit.Tools.Extensions
         /// <returns></returns>
         public static byte[]? ToByteArray(this object obj)
         {
-            if (obj == null)
+            if (obj is null)
                 return null;
 
             var binaryFormatter = new BinaryFormatter();

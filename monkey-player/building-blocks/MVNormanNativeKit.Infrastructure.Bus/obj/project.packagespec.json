@@ -1,0 +1,66 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure.Bus\\MVNormanNativeKit.Infrastructure.Bus.csproj",
+    "projectName": "MVNormanNativeKit.Infrastructure.Bus",
+    "projectPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure.Bus\\MVNormanNativeKit.Infrastructure.Bus.csproj",
+    "outputPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure.Bus\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure.Data\\MVNormanNativeKit.Infrastructure.Data.csproj": {
+            "projectPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure.Data\\MVNormanNativeKit.Infrastructure.Data.csproj"
+          },
+          "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure\\MVNormanNativeKit.Infrastructure.csproj": {
+            "projectPath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\building-blocks\\MVNormanNativeKit.Infrastructure\\MVNormanNativeKit.Infrastructure.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "StackExchange.Redis": {
+          "target": "Package",
+          "version": "[2.2.4, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+    }
+  }
+}
