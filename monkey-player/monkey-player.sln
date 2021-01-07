@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monkey-player-api", "monkey-player-api\monkey-player-api.csproj", "{3E81AC42-61B3-4C04-A087-019810F679AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "monkey-player-api", "monkey-player-api\monkey-player-api.csproj", "{3E81AC42-61B3-4C04-A087-019810F679AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "building-blocks", "building-blocks", "{27661072-4DDA-4FF4-8886-377A84A435CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVNormanNativeKit.Domain", "building-blocks\MVNormanNativeKit.Domain\MVNormanNativeKit.Domain.csproj", "{18FFB225-524C-43A3-9229-0C6C19C94CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVNormanNativeKit.Infrastructure", "building-blocks\MVNormanNativeKit.Infrastructure\MVNormanNativeKit.Infrastructure.csproj", "{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,21 @@ Global
 		{3E81AC42-61B3-4C04-A087-019810F679AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E81AC42-61B3-4C04-A087-019810F679AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E81AC42-61B3-4C04-A087-019810F679AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FFB225-524C-43A3-9229-0C6C19C94CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FFB225-524C-43A3-9229-0C6C19C94CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FFB225-524C-43A3-9229-0C6C19C94CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FFB225-524C-43A3-9229-0C6C19C94CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18FFB225-524C-43A3-9229-0C6C19C94CD2} = {27661072-4DDA-4FF4-8886-377A84A435CC}
+		{DCDF5FD3-9B98-4F36-9A16-C7EDB074EBFA} = {27661072-4DDA-4FF4-8886-377A84A435CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1417424B-7A8A-4441-932A-5C4A050BE308}
