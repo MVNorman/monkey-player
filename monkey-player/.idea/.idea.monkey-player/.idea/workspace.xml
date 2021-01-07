@@ -22,7 +22,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12046ce-86d8-43d7-a0e7-a16e65a88f42" name="Default Changelist" comment="Upgrade packages" />
+    <list default="true" id="c12046ce-86d8-43d7-a0e7-a16e65a88f42" name="Default Changelist" comment="Upgrade packages">
+      <change afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/Extensions/EnumerableExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.monkey-player/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.monkey-player/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.monkey-player/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.monkey-player/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/monkey-player/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/monkey-player/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/monkey-player/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/monkey-player/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/Notifications/MessageEnvelope.cs" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/Notifications/MessageEnvelope.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Data/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Tools.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/Debug/netcoreapp3.1/MVNormanNativeKit.Tools.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/bin/Debug/netcoreapp3.1/monkey-player-api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/monkey-player-api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/monkey-player-api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/Debug/netcoreapp3.1/monkey-player-api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/monkey-player-api.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monkey-player-api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/monkey-player-api/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,10 +65,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/vmykh2/source/repos/monkey-player/monkey-player/monkey-player-api/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/Extensions/ByteArrayExtensions.cs" />
+        <option value="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Infrastructure.Bus/Notifications/MessageEnvelope.cs" />
+        <option value="$PROJECT_DIR$/building-blocks/MVNormanNativeKit.Tools/Extensions/EnumerableExtensions.cs" />
+        <option value="$PROJECT_DIR$/monkey-player-api/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/monkey-player-api/Startup.cs" />
       </list>
     </option>
   </component>
@@ -49,7 +90,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.monkey-player-api: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.monkey-player-api: IIS Express (1)">
+    <configuration name="monkey-player-api: IIS Express (1)" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/monkey-player-api/monkey-player-api.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="monkey-player-api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/monkey-player-api/monkey-player-api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
@@ -80,6 +136,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Launch Settings Profile.monkey-player-api: IIS Express (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,21 +184,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Upgrade packages" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610041659447">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610051091248">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610041659447" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610041659447">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610051091248" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610051091248">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610041659447" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610041659447">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610051091248" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610051091248">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610041659447" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610041659447">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610051091248" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610051091248">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610041659447" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610051091248" />
+    <state x="2543" y="230" key="RollbackChangesDialog" timestamp="1610042625227">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="230" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1610042625227" />
   </component>
 </project>

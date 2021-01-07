@@ -7,7 +7,7 @@ namespace MVNormanNativeKit.Infrastructure.Bus.Notifications
     /// This class contains the Protobuf message with the idea that we will use Protobuf
     /// for inter-communication bus via event broker like Redis/Kafka
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TEvent"></typeparam>
     public class MessageEnvelope<TEvent> : INotification
         where TEvent : IEvent
     {

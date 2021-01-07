@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "HyIJrcyLlRG3pVTguSTcG4FHXZYPfTS7ayrAZkRp7jFevxofGFbIuHkVUXRfQ/z6Gzsb9b1El7qZ7VF0iTxV9w==",
+  "dgSpecHash": "UmI7+db7HudCAeR4XD+aD1Xudyi4uXZ30p8tG2RnKH9ixxH2RqUqExxxLgErOJuSadps2xpdy7NNZY7gVjxnQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vmykh2\\source\\repos\\monkey-player\\monkey-player\\monkey-player-api\\monkey-player-api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vmykh2\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\vmykh2\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\vmykh2\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\vmykh2\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\vmykh2\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\vmykh2\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -18,3 +18,9 @@ C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\D
 C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\Debug\netcoreapp3.1\monkey-player-api.dll
 C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\Debug\netcoreapp3.1\monkey-player-api.pdb
 C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\Debug\netcoreapp3.1\monkey-player-api.genruntimeconfig.cache
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\Debug\netcoreapp3.1\monkey-player-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vmykh2\source\repos\monkey-player\monkey-player\monkey-player-api\obj\Debug\netcoreapp3.1\monkey-player-api.csproj.CopyComplete

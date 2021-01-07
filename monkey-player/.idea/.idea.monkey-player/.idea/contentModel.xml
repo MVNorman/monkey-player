@@ -165,6 +165,7 @@
           <e p="Extensions" t="Include">
             <e p="ByteArrayExtensions.cs" t="Include" />
             <e p="DynamicExtensions.cs" t="Include" />
+            <e p="EnumerableExtensions.cs" t="Include" />
             <e p="HashExtensions.cs" t="Include" />
             <e p="TypeConversionExtensions.cs" t="Include" />
           </e>
