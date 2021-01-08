@@ -4,4 +4,23 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\building-blocks\MVNormanNativeKit.Infrastructure.Data\MVNormanNativeKit.Infrastructure.Data.csproj" />
+      <ProjectReference Include="..\..\..\building-blocks\MVNormanNativeKit.Infrastructure\MVNormanNativeKit.Infrastructure.csproj" />
+      <ProjectReference Include="..\MonkeyPlayer.Domain\MonkeyPlayer.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MonkeyPlayer.Persistence;
 
 namespace MonkeyPlayer.API
 {
@@ -26,6 +27,8 @@ namespace MonkeyPlayer.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddPersistence(Configuration);
+            
             services.AddControllers();
             
             // Register the Swagger generator, defining 1 or more Swagger documents
