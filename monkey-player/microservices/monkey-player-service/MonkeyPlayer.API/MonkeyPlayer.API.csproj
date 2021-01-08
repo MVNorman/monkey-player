@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <RootNamespace>home_service_api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

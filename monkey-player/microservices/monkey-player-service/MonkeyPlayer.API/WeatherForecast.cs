@@ -1,6 +1,6 @@
 using System;
 
-namespace home_service_api
+namespace MonkeyPlayer.API
 {
     public class WeatherForecast
     {

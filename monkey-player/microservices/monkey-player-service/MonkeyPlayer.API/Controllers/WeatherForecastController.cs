@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace home_service_api.Controllers
+namespace MonkeyPlayer.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

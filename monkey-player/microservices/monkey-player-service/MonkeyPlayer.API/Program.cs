@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace home_service_api
+namespace MonkeyPlayer.API
 {
     public class Program
     {

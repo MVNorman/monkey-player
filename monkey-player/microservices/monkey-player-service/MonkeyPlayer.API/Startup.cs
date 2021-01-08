@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace home_service_api
+namespace MonkeyPlayer.API
 {
     public class Startup
     {
@@ -71,7 +71,7 @@ namespace home_service_api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Monkey Player API V1");
             });
-            
+
             app.UseRouting();
 
             app.UseAuthorization();
