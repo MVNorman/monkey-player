@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace monkey_player_api
+namespace home_service_api
 {
     public class Startup
     {
@@ -27,7 +27,7 @@ namespace monkey_player_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
+            
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
@@ -76,10 +76,7 @@ namespace monkey_player_api
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }

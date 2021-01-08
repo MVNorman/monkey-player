@@ -1,6 +1,6 @@
 using System;
 
-namespace monkey_player_api
+namespace home_service_api
 {
     public class WeatherForecast
     {
@@ -8,7 +8,7 @@ namespace monkey_player_api
 
         public int TemperatureC { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public int TemperatureF => 32 + (int) (TemperatureC / 0.5556);
 
         public string Summary { get; set; }
     }
