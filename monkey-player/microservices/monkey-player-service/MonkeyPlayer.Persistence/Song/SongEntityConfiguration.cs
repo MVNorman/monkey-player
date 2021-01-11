@@ -11,6 +11,11 @@ namespace MonkeyPlayer.Persistence.Song
             builder.ToTable("Songs", "player");
 
             builder.HasKey(x => x.Id);
+
+            builder.Property(x => x.Name).IsRequired();
+            builder.Property(x => x.DurationInMinutes).IsRequired();
+            builder.Property(x => x.StyleType).IsRequired();
+            builder.Property(x => x.SongInBytes).IsRequired();
         }
     }
 }

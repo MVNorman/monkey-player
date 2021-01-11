@@ -5,10 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-    </ItemGroup>
-
-    <ItemGroup>
+      <ProjectReference Include="..\MonkeyPlayer.Application\MonkeyPlayer.Application.csproj" />
       <ProjectReference Include="..\MonkeyPlayer.Persistence\MonkeyPlayer.Persistence.csproj" />
     </ItemGroup>
 

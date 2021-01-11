@@ -20,7 +20,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             var queryable = repo.Queryable();
 
@@ -37,7 +37,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             var queryable = repo.Queryable();
 
@@ -53,7 +53,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             var queryable = repo.Queryable();
 
@@ -71,7 +71,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             return await GetDataAsync<TDbContext, TEntity, TEntityId, TResponse>(repo, criterion, selector, null, include, disableTracking);
         }
@@ -84,7 +84,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             return await GetDataAsync<TDbContext, TEntity, TEntityId, TResponse>(repo, criterion, selector, filter, include, disableTracking);
         }
@@ -97,7 +97,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
             bool disableTracking = true)
             where TDbContext : DbContext
-            where TEntity : class, IAggregateRoot<TEntityId>
+            where TEntity : class, IEntity<TEntityId>
         {
             var queryable = repo.Queryable();
             if (disableTracking) queryable = queryable.AsNoTracking();

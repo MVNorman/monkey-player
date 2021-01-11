@@ -6,7 +6,7 @@ using MVNormanNativeKit.Domain.RepositoryRoot;
 namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
 {
     public class RepositoryAsync<TEntity, TId> : RepositoryAsync<DbContext, TEntity, TId>, IRepositoryAsync<TEntity, TId>
-        where TEntity : class, IAggregateRoot<TId>
+        where TEntity : class, IEntity<TId>
     {
         public RepositoryAsync(DbContext dbContext) : base(dbContext)
         {
@@ -15,7 +15,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
 
     public class RepositoryAsync<TDbContext, TEntity, TId> : IRepositoryAsync<TEntity, TId>
         where TDbContext : DbContext
-        where TEntity : class, IAggregateRoot<TId>
+        where TEntity : class, IEntity<TId>
     {
         private readonly TDbContext _dbContext;
         private readonly DbSet<TEntity> _dbSet;

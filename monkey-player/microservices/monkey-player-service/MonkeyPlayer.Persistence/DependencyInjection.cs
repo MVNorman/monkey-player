@@ -11,7 +11,7 @@ namespace MonkeyPlayer.Persistence
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
+        public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             var migrationsAssembly = typeof(MonkeyPlayerDataContext).GetTypeInfo().Assembly.GetName().Name;
             var dbOptions = new DbOptions();
@@ -19,7 +19,7 @@ namespace MonkeyPlayer.Persistence
             configuration.Bind("ConnectionStrings", dbOptions);
             
             services.AddDbContext<MonkeyPlayerDataContext>(
-                options => options.UseSqlServer(configuration.GetConnectionString("Default"),
+                options => options.UseSqlServer(configuration.GetConnectionString(ConnectionStringKeys.App),
                     db => db.MigrationsAssembly(migrationsAssembly)));
             
             services.AddScoped<IEfUnitOfWork<MonkeyPlayerDataContext>, EfUnitOfWork<MonkeyPlayerDataContext>>();
@@ -32,8 +32,6 @@ namespace MonkeyPlayer.Persistence
             services.AddScoped<IDapperUnitOfWork, DapperUnitOfWork>();
 
             // services.AddScoped<ISignInRepository, SignInRepository>();
-
-            return services;
         }
     }
 }

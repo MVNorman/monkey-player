@@ -11,7 +11,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
     {
         public static async Task<TEntity> GetByIdAsync<TEntity, TId>
 
-        (this IQueryRepository<TEntity, TId> repository, TId id) where TEntity : class, IAggregateRoot<TId>
+        (this IQueryRepository<TEntity, TId> repository, TId id) where TEntity : class, IEntity<TId>
         {
             if (!(repository is GenericRepository<TEntity, TId> genericRepository))
             {
@@ -23,8 +23,9 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
             return entities.FirstOrDefault();
         }
 
-        public static async Task<IReadOnlyCollection<TEntity>> GetByConditionAsync<TEntity, TId>(this IQueryRepository<TEntity, TId> repository, object whereConditions)
-            where TEntity : class, IAggregateRoot<TId>
+        public static async Task<IReadOnlyCollection<TEntity>> GetByConditionAsync<TEntity, TId>(
+            this IQueryRepository<TEntity, TId> repository, object whereConditions)
+            where TEntity : class, IEntity<TId>
         {
             if (!(repository is GenericRepository<TEntity, TId> genericRepository))
             {

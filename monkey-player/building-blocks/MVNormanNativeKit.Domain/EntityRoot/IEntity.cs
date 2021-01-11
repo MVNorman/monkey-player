@@ -1,6 +1,7 @@
 namespace MVNormanNativeKit.Domain.EntityRoot
 {
-    public interface IEntity<TId> : IIdentity<TId>
+    public interface IEntity<TId>
     {
+        public TId Id { get; set; }
     }
 }

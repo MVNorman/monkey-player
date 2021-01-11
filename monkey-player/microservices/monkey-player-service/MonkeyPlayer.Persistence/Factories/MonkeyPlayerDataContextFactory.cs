@@ -20,10 +20,10 @@ namespace MonkeyPlayer.Persistence.Factories
 
             var connectionString = ConfigurationHelper
                 .GetConfiguration(AppContext.BaseDirectory)
-                ?.GetConnectionString("Default");
+                ?.GetConnectionString(ConnectionStringKeys.App);
 
             if (string.IsNullOrWhiteSpace(connectionString))
-                throw new InvalidOperationException("Connection string is not defined");
+                throw new Exception("Connection string is not defined");
             
             optionsBuilder.UseSqlServer(connectionString,
                 sql =>

@@ -1,11 +1,9 @@
 using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using MVNormanNativeKit.Domain;
 using MVNormanNativeKit.Domain.EntityRoot;
-using MVNormanNativeKit.Domain.EventRoot;
 using MVNormanNativeKit.Domain.RepositoryRoot;
 
 namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
@@ -19,15 +17,13 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
     {
         private ConcurrentDictionary<string, object> _repositories = null;
         public ISqlConnectionFactory SqlConnectionFactory { get; }
-        public IEnumerable<IDomainEventDispatcher> EventBuses { get; }
 
-        public DapperUnitOfWork(ISqlConnectionFactory sqlConnectionFactory, IEnumerable<IDomainEventDispatcher> eventBuses)
+        public DapperUnitOfWork(ISqlConnectionFactory sqlConnectionFactory)
         {
             SqlConnectionFactory = sqlConnectionFactory;
-            EventBuses = eventBuses;
         }
 
-        public IQueryRepository<TEntity, TId> QueryRepository<TEntity, TId>() where TEntity : class, IAggregateRoot<TId>
+        public IQueryRepository<TEntity, TId> QueryRepository<TEntity, TId>() where TEntity : class, IEntity<TId>
         {
             if (_repositories == null)
                 _repositories = new ConcurrentDictionary<string, object>();
@@ -35,14 +31,14 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
             var key = $"{typeof(TEntity)}-query";
             if (!_repositories.ContainsKey(key))
             {
-                var cachedRepo = new GenericRepository<TEntity, TId>(SqlConnectionFactory, EventBuses);
+                var cachedRepo = new GenericRepository<TEntity, TId>(SqlConnectionFactory);
                 _repositories[key] = cachedRepo;
             }
 
             return (IQueryRepository<TEntity, TId>)_repositories[key];
         }
 
-        public IRepositoryAsync<TEntity, TId> RepositoryAsync<TEntity, TId>() where TEntity : class, IAggregateRoot<TId>
+        public IRepositoryAsync<TEntity, TId> RepositoryAsync<TEntity, TId>() where TEntity : class, IEntity<TId>
         {
             if (_repositories == null)
                 _repositories = new ConcurrentDictionary<string, object>();
@@ -50,7 +46,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
             var key = $"{typeof(TEntity)}-command";
             if (!_repositories.ContainsKey(key))
             {
-                var cachedRepo = new GenericRepository<TEntity, TId>(SqlConnectionFactory, EventBuses);
+                var cachedRepo = new GenericRepository<TEntity, TId>(SqlConnectionFactory);
                 _repositories[key] = cachedRepo;
             }
 

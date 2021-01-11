@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MVNormanNativeKit.Domain.EntityRoot;
-using MVNormanNativeKit.Domain.EventRoot;
 using MVNormanNativeKit.Domain.RepositoryRoot;
 using MVNormanNativeKit.Infrastructure.Data.Dapper.SimpleCRUD;
 using MVNormanNativeKit.Tools.Extensions;
@@ -11,15 +10,13 @@ using MVNormanNativeKit.Tools.Extensions;
 namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
 {
     public class GenericRepository<TEntity, TId> : IRepositoryAsync<TEntity, TId>, IQueryRepository<TEntity, TId>
-        where TEntity : class, IAggregateRoot<TId>
+        where TEntity : class, IEntity<TId>
     {
         public ISqlConnectionFactory SqlConnectionFactory { get; }
-        public IEnumerable<IDomainEventDispatcher> EventBuses { get; }
 
-        public GenericRepository(ISqlConnectionFactory sqlConnectionFactory, IEnumerable<IDomainEventDispatcher> eventBuses)
+        public GenericRepository(ISqlConnectionFactory sqlConnectionFactory)
         {
             SqlConnectionFactory = sqlConnectionFactory;
-            EventBuses = eventBuses;
         }
 
         public IQueryable<TEntity> Queryable()
@@ -47,13 +44,12 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
         {
             using var conn = SqlConnectionFactory.GetOpenConnection();
             var newId = await conn.InsertAsync<TId, TEntity>(entity);
-            if (entity is IAggregateRoot<TId> returnValue)
+            if (entity is IEntity<TId> returnValue)
             {
                 returnValue.ToDynamic().Id = newId;
                 return (TEntity)returnValue;
             }
 
-            await DispatchEvents(entity);
             return entity;
         }
 
@@ -66,7 +62,6 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
                 throw new Exception("Could not update record to the database.");
             }
 
-            await DispatchEvents(entity);
             return await GetByIdAsync(entity.Id);
         }
 
@@ -81,21 +76,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
                 throw new Exception("Could not delete record in the database.");
             }
 
-            await DispatchEvents(entity);
             return numberRecordAffected;
-        }
-
-        private async Task DispatchEvents(TEntity entity)
-        {
-            foreach (var @event in entity.GetUncommittedEvents())
-            {
-                foreach (var eventBus in EventBuses)
-                {
-                    await eventBus.Dispatch(@event);
-                }
-            }
-
-            entity.ClearUncommittedEvents();
         }
     }
 }

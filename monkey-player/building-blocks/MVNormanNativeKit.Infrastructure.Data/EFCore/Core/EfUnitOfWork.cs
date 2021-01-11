@@ -22,7 +22,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             _context = context;
         }
 
-        public IQueryRepository<TEntity, TId> QueryRepository<TEntity, TId>() where TEntity : class, IAggregateRoot<TId>
+        public IQueryRepository<TEntity, TId> QueryRepository<TEntity, TId>() where TEntity : class, IEntity<TId>
         {
             if (_repositories == null)
                 _repositories = new ConcurrentDictionary<string, object>();
@@ -37,7 +37,7 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             return (IQueryRepository<TEntity, TId>)_repositories[key];
         }
 
-        public virtual IRepositoryAsync<TEntity, TId> RepositoryAsync<TEntity, TId>() where TEntity : class, IAggregateRoot<TId>
+        public virtual IRepositoryAsync<TEntity, TId> RepositoryAsync<TEntity, TId>() where TEntity : class, IEntity<TId>
         {
             if (_repositories == null) _repositories = new ConcurrentDictionary<string, object>();
 

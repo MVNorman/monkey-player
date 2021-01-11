@@ -1,85 +1,101 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+using MonkeyPlayer.Application;
 using MonkeyPlayer.Persistence;
+using MVNormanNativeKit.Infrastructure.Core;
+using MVNormanNativeKit.Infrastructure.Logging;
+using MVNormanNativeKit.Infrastructure.MessageBrokers;
+using MVNormanNativeKit.Infrastructure.Outbox;
+using MVNormanNativeKit.Infrastructure.Swagger;
+using Serilog;
 
 namespace MonkeyPlayer.API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IConfigurationRoot _configuration;
+        private readonly IWebHostEnvironment _environment;
+        
+        public Startup(IWebHostEnvironment env)
         {
-            Configuration = configuration;
-        }
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", reloadOnChange: true, optional: true)
+                .AddEnvironmentVariables();
 
-        public IConfiguration Configuration { get; }
+            _configuration = builder.Build();
+
+            Log.Logger = LoggingExtensions.AddLogging(_configuration);
+
+            _environment = env;
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddPersistence(Configuration);
+            services.AddPersistence(_configuration);
             
             services.AddControllers();
-            
-            // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo
-                {
-                    Version = "v1",
-                    Title = "Monkey Player API",
-                    Description = "Monkey Player ASP.NET Core Web API",
-                    TermsOfService = new Uri("https://example.com/terms"),
-                    Contact = new OpenApiContact
-                    {
-                        Name = "MVNorman GitHub",
-                        Email = string.Empty,
-                        Url = new Uri("https://github.com/MVNorman"),
-                    },
-                    License = new OpenApiLicense
-                    {
-                        Name = "Monkey Player License",
-                        Url = new Uri("https://example.com/license"),
-                    }
-                });
-            });
+
+            services
+               // .AddConsul(Configuration)
+                .AddMessageBroker(_configuration)
+                .AddOutbox(_configuration)
+                .AddSwagger(_configuration)
+                .AddCore(typeof(Startup), typeof(EventsExtensions), typeof(MonkeyPlayerDataContext)); 
+            // Types are needed for mediator to work the different projects. In this case startup is added 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
-            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            UpdateDatabase(app);
 
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Monkey Player API V1");
-            });
+
+            app
+                .UseLogging(_configuration, loggerFactory)
+                .UseSwagger(_configuration);
+                //.UseConsul(lifetime);
+            
+           // app.UseHttpsRedirection();
+
+            app.UseSwagger(_configuration);
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health");
+            });
+
+            app.UseSubscribeAllEvents();
+        }
+        
+        private static void UpdateDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices
+                .GetRequiredService<IServiceScopeFactory>()
+                .CreateScope())
+            {
+                using (var context = serviceScope.ServiceProvider.GetService<MonkeyPlayerDataContext>())
+                {
+                    context.Database.Migrate();
+                }
+            }
         }
     }
 }
