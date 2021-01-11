@@ -35,9 +35,9 @@ namespace MVNormanNativeKit.Infrastructure.Core
                 .AddFluentValidation(cfg => { cfg.RegisterValidatorsFromAssemblies(assemblies); });
 
             services.AddHealthChecks();
-            //
-            // services.AddControllers()
-            //     .AddNewtonsoftJson();
+
+            services.AddControllers();
+               // .AddNewtonsoftJson();
 
 
             return services;

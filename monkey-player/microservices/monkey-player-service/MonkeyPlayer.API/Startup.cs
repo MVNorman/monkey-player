@@ -41,8 +41,6 @@ namespace MonkeyPlayer.API
         {
             services.AddPersistence(_configuration);
             
-            services.AddControllers();
-
             services
                // .AddConsul(Configuration)
                 .AddMessageBroker(_configuration)
