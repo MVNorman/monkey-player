@@ -5,14 +5,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MonkeyPlayer.Application;
-using MonkeyPlayer.Persistence;
 using MVNormanNativeKit.Infrastructure.Core;
 using MVNormanNativeKit.Infrastructure.Logging;
 using MVNormanNativeKit.Infrastructure.MessageBrokers;
 using MVNormanNativeKit.Infrastructure.Outbox;
 using MVNormanNativeKit.Infrastructure.Swagger;
 using Serilog;
+using MonkeyPlayer.Persistence;
+using MP.Shared.Events;
 
 namespace MonkeyPlayer.API
 {
@@ -59,7 +59,6 @@ namespace MonkeyPlayer.API
             }
 
             UpdateDatabase(app);
-
 
             app
                 .UseLogging(_configuration, loggerFactory)

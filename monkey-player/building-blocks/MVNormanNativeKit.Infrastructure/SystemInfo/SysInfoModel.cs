@@ -10,7 +10,7 @@ namespace MVNormanNativeKit.Infrastructure.SystemInfo
         public string BasePath { get; set; }
         public string AppName { get; set; }
         public string AppVersion { get; set; }
-        public string AssemplyVersion { get; set; }
+        public string AssemblyVersion { get; set; }
         public string RuntimeFramework { get; set; }
         public string FrameworkDescription { get; set; }
         public Dictionary<string, object> Envs { get; set; }

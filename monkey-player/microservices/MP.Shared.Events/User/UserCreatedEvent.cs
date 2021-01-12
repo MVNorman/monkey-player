@@ -2,7 +2,7 @@ using System;
 using FluentValidation;
 using MVNormanNativeKit.Infrastructure.Core.Events;
 
-namespace MonkeyPlayer.Application.User
+namespace MP.Shared.Events.User
 {
     public class UserCreatedEvent : IEvent
     {

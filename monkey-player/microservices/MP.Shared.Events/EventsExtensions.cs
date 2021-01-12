@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using MVNormanNativeKit.Infrastructure.Core.Events;
 using MVNormanNativeKit.Infrastructure.MessageBrokers;
 
-namespace MonkeyPlayer.Application
+namespace MP.Shared.Events
 {
     public static class EventsExtensions
     {

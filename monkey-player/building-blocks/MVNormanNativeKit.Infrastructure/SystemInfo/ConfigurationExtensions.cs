@@ -58,7 +58,7 @@ namespace MVNormanNativeKit.Infrastructure.SystemInfo
                 BasePath = basePath,
                 AppName = appName,
                 AppVersion = appVersion,
-                AssemplyVersion = assemblyVersion,
+                AssemblyVersion = assemblyVersion,
                 RuntimeFramework = runtimeFramework.ToString(),
                 FrameworkDescription = RuntimeInformation.FrameworkDescription,
                 Envs = envs

@@ -17,7 +17,7 @@ namespace MonkeyPlayer.Persistence.Factories
         public MonkeyPlayerDataContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MonkeyPlayerDataContext>();
-
+            
             var connectionString = ConfigurationHelper
                 .GetConfiguration(AppContext.BaseDirectory)
                 ?.GetConnectionString(ConnectionStringKeys.App);
