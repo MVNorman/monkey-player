@@ -68,7 +68,7 @@ namespace MVNormanNativeKit.Infrastructure.EventStores.Repository
                 throw new Exception($"{nameof(stream)} was null");
             }
 
-            await _eventBus.Commit(stream);
+            await _eventBus.CommitAsync(stream);
         }
     }
 }

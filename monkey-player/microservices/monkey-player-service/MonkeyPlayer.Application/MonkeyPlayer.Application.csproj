@@ -6,6 +6,12 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\building-blocks\MVNormanNativeKit.Infrastructure\MVNormanNativeKit.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\MP.Shared.Events\MP.Shared.Events.csproj" />
+      <ProjectReference Include="..\MonkeyPlayer.Domain\MonkeyPlayer.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Song\Queries" />
     </ItemGroup>
 
 </Project>

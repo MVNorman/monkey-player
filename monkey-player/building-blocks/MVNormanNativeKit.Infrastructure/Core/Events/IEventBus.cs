@@ -5,8 +5,8 @@ namespace MVNormanNativeKit.Infrastructure.Core.Events
 {
     public interface IEventBus
     {
-        Task PublishLocal(params IEvent[] events);
-        Task Commit(params IEvent[] events);
-        Task Commit(StreamState stream);
+        Task PublishLocalAsync(params IEvent[] events);
+        Task CommitAsync(params IEvent[] events);
+        Task CommitAsync(StreamState stream);
     }
 }

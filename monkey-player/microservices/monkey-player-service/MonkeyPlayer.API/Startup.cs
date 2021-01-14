@@ -13,6 +13,7 @@ using MVNormanNativeKit.Infrastructure.Swagger;
 using Serilog;
 using MonkeyPlayer.Persistence;
 using MP.Shared.Events;
+using MVNormanNativeKit.Infrastructure.Consul;
 
 namespace MonkeyPlayer.API
 {
@@ -42,7 +43,7 @@ namespace MonkeyPlayer.API
             services.AddPersistence(_configuration);
             
             services
-               // .AddConsul(Configuration)
+                .AddConsul(_configuration)
                 .AddMessageBroker(_configuration)
                 .AddOutbox(_configuration)
                 .AddSwagger(_configuration)
@@ -51,40 +52,44 @@ namespace MonkeyPlayer.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(
+            IApplicationBuilder applicationBuilder,
+            IWebHostEnvironment webHostEnvironment,
+            ILoggerFactory loggerFactory,
+            IHostApplicationLifetime hostApplicationLifetime)
         {
-            if (env.IsDevelopment())
+            if (webHostEnvironment.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                applicationBuilder.UseDeveloperExceptionPage();
             }
 
-            UpdateDatabase(app);
+            UpdateDatabase(applicationBuilder);
 
-            app
+            applicationBuilder
                 .UseLogging(_configuration, loggerFactory)
-                .UseSwagger(_configuration);
-                //.UseConsul(lifetime);
+                .UseSwagger(_configuration)
+                .UseConsul(hostApplicationLifetime);
             
            // app.UseHttpsRedirection();
 
-            app.UseSwagger(_configuration);
+            applicationBuilder.UseSwagger(_configuration);
 
-            app.UseRouting();
+            applicationBuilder.UseRouting();
 
             //app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
+            applicationBuilder.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHealthChecks("/health");
             });
 
-            app.UseSubscribeAllEvents();
+            applicationBuilder.UseSubscribeAllEvents();
         }
         
-        private static void UpdateDatabase(IApplicationBuilder app)
+        private static void UpdateDatabase(IApplicationBuilder applicationBuilder)
         {
-            using (var serviceScope = app.ApplicationServices
+            using (var serviceScope = applicationBuilder.ApplicationServices
                 .GetRequiredService<IServiceScopeFactory>()
                 .CreateScope())
             {

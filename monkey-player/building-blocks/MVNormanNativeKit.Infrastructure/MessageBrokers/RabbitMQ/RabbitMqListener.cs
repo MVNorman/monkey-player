@@ -36,7 +36,7 @@ namespace MVNormanNativeKit.Infrastructure.MessageBrokers.RabbitMQ
                     using (var scope = _serviceFactory.CreateScope())
                     {
                         var eventBus = scope.ServiceProvider.GetService<IEventBus>();
-                        await eventBus.PublishLocal(msg);
+                        await eventBus.PublishLocalAsync(msg);
                     }
                 }),
                 cfg => cfg.UseSubscribeConfiguration(

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MVNormanNativeKit.Domain;
 using MVNormanNativeKit.Domain.EntityRoot;
 using MVNormanNativeKit.Domain.RepositoryRoot;
+using MVNormanNativeKit.Infrastructure.Core.Events;
 
 namespace MVNormanNativeKit.Infrastructure.Data.Dapper.Core
 {

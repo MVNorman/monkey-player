@@ -30,7 +30,7 @@ namespace MonkeyPlayer.Persistence
             using (var transaction = Database.BeginTransaction())
             {
                 await SaveChangesAsync();
-                await _eventBus.Commit(@event);
+                await _eventBus.CommitAsync(@event);
 
                 await transaction.CommitAsync();
             }

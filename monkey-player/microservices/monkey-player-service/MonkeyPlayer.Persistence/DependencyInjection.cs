@@ -2,6 +2,8 @@ using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MonkeyPlayer.Domain.Song.Contracts;
+using MonkeyPlayer.Persistence.Song;
 using MVNormanNativeKit.Infrastructure.Data.Dapper;
 using MVNormanNativeKit.Infrastructure.Data.Dapper.Core;
 using MVNormanNativeKit.Infrastructure.Data.EFCore;
@@ -31,7 +33,7 @@ namespace MonkeyPlayer.Persistence
             services.AddScoped<ISqlConnectionFactory, SqlConnectionFactory>();
             services.AddScoped<IDapperUnitOfWork, DapperUnitOfWork>();
 
-            // services.AddScoped<ISignInRepository, SignInRepository>();
+            services.AddScoped<ISongRepository, SongRepository>();
         }
     }
 }

@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MVNormanNativeKit.Domain\MVNormanNativeKit.Domain.csproj" />
+    <ProjectReference Include="..\MVNormanNativeKit.Infrastructure\MVNormanNativeKit.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

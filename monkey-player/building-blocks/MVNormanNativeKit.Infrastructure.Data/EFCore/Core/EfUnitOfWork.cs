@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using MVNormanNativeKit.Domain;
 using MVNormanNativeKit.Domain.EntityRoot;
 using MVNormanNativeKit.Domain.RepositoryRoot;
+using MVNormanNativeKit.Infrastructure.Core.Events;
 
 namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
 {
@@ -15,11 +16,15 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
     public class EfUnitOfWork<TDbContext> : IEfUnitOfWork<TDbContext> where TDbContext : DbContext
     {
         private readonly TDbContext _context;
+        
+        private readonly IEventBus _eventBus;
+        
         private ConcurrentDictionary<string, object> _repositories;
 
-        public EfUnitOfWork(TDbContext context)
+        public EfUnitOfWork(TDbContext context, IEventBus eventBus)
         {
             _context = context;
+            _eventBus = eventBus;
         }
 
         public IQueryRepository<TEntity, TId> QueryRepository<TEntity, TId>() where TEntity : class, IEntity<TId>
@@ -30,8 +35,8 @@ namespace MVNormanNativeKit.Infrastructure.Data.EFCore.Core
             var key = $"{typeof(TEntity)}-query";
             if (!_repositories.ContainsKey(key))
             {
-                var cachedRepo = new QueryRepository<TEntity, TId>(_context);
-                _repositories[key] = cachedRepo;
+                var cachedRepository = new QueryRepository<TEntity, TId>(_context);
+                _repositories[key] = cachedRepository;
             }
 
             return (IQueryRepository<TEntity, TId>)_repositories[key];

@@ -40,7 +40,7 @@ namespace MVNormanNativeKit.Infrastructure.MessageBrokers.Kafka
                     using (var scope = _serviceFactory.CreateScope())
                     {
                         var eventBus = scope.ServiceProvider.GetService<IEventBus>();
-                        eventBus.PublishLocal(@event);
+                        eventBus.PublishLocalAsync(@event);
                     }
                 }
             }

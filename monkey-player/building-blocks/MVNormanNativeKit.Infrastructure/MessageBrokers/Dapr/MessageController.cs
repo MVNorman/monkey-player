@@ -18,7 +18,7 @@ namespace MVNormanNativeKit.Infrastructure.MessageBrokers.Dapr
         [HttpPost, Route("")]
         public async Task<IActionResult> ReceiveMessage([FromBody] Message message)
         {
-            await _eventBus.PublishLocal(message.Content);
+            await _eventBus.PublishLocalAsync(message.Content);
 
             return Ok();
         }

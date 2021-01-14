@@ -20,7 +20,7 @@ namespace MVNormanNativeKit.Infrastructure.Core.Events
             _eventListener = eventListener;
         }
 
-        public async Task PublishLocal(params IEvent[] events)
+        public async Task PublishLocalAsync(params IEvent[] events)
         {
             foreach (var @event in events)
             {
@@ -28,7 +28,7 @@ namespace MVNormanNativeKit.Infrastructure.Core.Events
             }
         }
 
-        public async Task Commit(params IEvent[] events)
+        public async Task CommitAsync(params IEvent[] events)
         {
             foreach (var @event in events)
             {
@@ -36,7 +36,7 @@ namespace MVNormanNativeKit.Infrastructure.Core.Events
             }
         }
 
-        public async Task Commit(StreamState stream)
+        public async Task CommitAsync(StreamState stream)
         {
             if (_outboxListener != null)
             {
