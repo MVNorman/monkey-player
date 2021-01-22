@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using MonkeyPlayer.Domain.User;
+using MP.Domain.User;
 using MVNormanNativeKit.Domain.EntityRoot;
 using MVNormanNativeKit.Tools.Extensions;
 
-namespace MonkeyPlayer.Domain.UserStatus
+namespace MP.Domain.UserStatus
 {
     public class UserStatusReferenceEntity: IEntity<UserStatusEnum>
     {

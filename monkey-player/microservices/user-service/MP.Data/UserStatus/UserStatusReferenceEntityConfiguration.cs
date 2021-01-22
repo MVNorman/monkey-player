@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MonkeyPlayer.Domain.UserStatus;
+using MP.Domain.UserStatus;
 
-namespace MonkeyPlayer.Persistence.UserStatus
+namespace MP.Data.UserStatus
 {
     public class UserStatusReferenceEntityConfiguration : IEntityTypeConfiguration<UserStatusReferenceEntity>
     {

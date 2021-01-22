@@ -1,7 +1,6 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MonkeyPlayer.Domain.User;
-using MonkeyPlayer.Domain.UserStatus;
+using MonkeyPlayer.Domain.Song;
 using MVNormanNativeKit.Infrastructure.Core.Events;
 
 namespace MonkeyPlayer.Persistence
@@ -15,8 +14,7 @@ namespace MonkeyPlayer.Persistence
             _eventBus = eventBus;
         }
         
-        public DbSet<UserEntity> Users { get; set; }
-        public DbSet<UserStatusReferenceEntity> UserStatusReferences { get; set; }
+        public DbSet<SongEntity> Songs { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

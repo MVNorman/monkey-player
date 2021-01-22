@@ -42,7 +42,11 @@ namespace MVNormanNativeKit.Infrastructure.MessageBrokers.RabbitMQ
                 cfg => cfg.UseSubscribeConfiguration(
                     c => c
                     .OnDeclaredExchange(GetExchangeDeclaration(type))
-                    .FromDeclaredQueue(q => q.WithName((_options.Queue.Name ?? AppDomain.CurrentDomain.FriendlyName).Trim().Trim('_') + "_" + type.Name)))
+                    .FromDeclaredQueue(q =>
+                        q.WithName(
+                            (_options.Queue.Name ?? 
+                             AppDomain.CurrentDomain.FriendlyName).Trim().Trim('_') + "_" + type.Name))
+                    )
             );
         }
 

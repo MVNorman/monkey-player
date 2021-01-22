@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MonkeyPlayer.Domain.User;
+using MP.Domain.User;
 
-namespace MonkeyPlayer.Persistence.User
+namespace MP.Data.User
 {
 
     public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
