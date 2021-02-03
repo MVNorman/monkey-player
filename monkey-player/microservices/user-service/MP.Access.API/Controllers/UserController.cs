@@ -1,13 +1,11 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using MP.Application.User.Commands;
 using MP.Application.User.Queries;
-using MP.Data;
 using MVNormanNativeKit.Infrastructure.Core.Commands;
 using MVNormanNativeKit.Infrastructure.Core.Queries;
-using MVNormanNativeKit.Infrastructure.Data.EFCore.Core;
 
 namespace MP.Access.API.Controllers
 {
@@ -15,21 +13,13 @@ namespace MP.Access.API.Controllers
     [Route("api/user")]
     public class UserController : ControllerBase
     {
-        private readonly IEfUnitOfWork<UserDataContext> _context;
-
-        private readonly ILogger<UserController> _logger;
-        
         private readonly ICommandBus _commandBus;
         private readonly IQueryBus _queryBus;
 
         public UserController(
-            ILogger<UserController> logger, 
-            IEfUnitOfWork<UserDataContext> context,
             ICommandBus commandBus,
             IQueryBus queryBus)
         {
-            _logger = logger;
-            _context = context;
             _commandBus = commandBus;
             _queryBus = queryBus;
         }
@@ -46,22 +36,29 @@ namespace MP.Access.API.Controllers
         }
         
         [HttpGet, Route("{id}")]
-        public async Task<ActionResult<GetUserQuery.Result>> Get([FromRoute] Guid id)
+        public async Task<ActionResult<GetUserQuery.Result>> Get([FromRoute] Guid id, CancellationToken cancellationToken)
         {
             var query = new GetUserQuery.Query()
             {
                 Id = id
             };
 
-            var result = await _queryBus.Send(query);
+            var result = await _queryBus.Send(query, cancellationToken);
             
             return Ok(result);
         }
         
         [HttpPost]
-        public async Task<ActionResult<CreateUserCommand.Result>> Create([FromBody] CreateUserCommand.Command command)
+        public async Task<ActionResult<CreateUserCommand.Result>> Create([FromBody] CreateUserCommand.Command command, CancellationToken cancellationToken)
         {
-            var result = await _commandBus.Send(command); 
+            var result = await _commandBus.Send(command, cancellationToken); 
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<DeleteUserCommand.Result>> Delete([FromBody] DeleteUserCommand.Command command, CancellationToken cancellationToken)
+        {
+            var result =  await _commandBus.Send(command, cancellationToken);
             return Ok(result);
         }
     }

@@ -22,7 +22,7 @@ namespace MP.Application.User.Commands
             public string Email { get; set; }
         }
         
-        public class Validator : AbstractValidator<CreateUserCommand.Command>
+        public class Validator : AbstractValidator<Command>
         {
             public Validator()
             {

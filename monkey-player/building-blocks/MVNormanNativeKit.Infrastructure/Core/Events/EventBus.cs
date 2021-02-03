@@ -55,18 +55,20 @@ namespace MVNormanNativeKit.Infrastructure.Core.Events
 
         private async Task SendToMessageBroker(IEvent @event)
         {
-            if (_outboxListener != null)
-            {
-                await _outboxListener.Commit(@event);
-            }
-            else if (_eventListener != null)
-            {
-                await _eventListener.Publish(@event);
-            }
-            else
-            {
-                throw new ArgumentNullException("No event listener found");
-            }
+            await _eventListener.Publish(@event);
+            
+            // if (_outboxListener != null)
+            // {
+            //     await _outboxListener.Commit(@event);
+            // }
+            // else if (_eventListener != null)
+            // {
+            //     await _eventListener.Publish(@event);
+            // }
+            // else
+            // {
+            //     throw new ArgumentNullException("No event listener found");
+            // }
         }
     }
 }

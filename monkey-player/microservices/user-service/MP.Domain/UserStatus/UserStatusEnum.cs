@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace MonkeyPlayer.Domain.UserStatus
+namespace MP.Domain.UserStatus
 {
     public enum UserStatusEnum
     {

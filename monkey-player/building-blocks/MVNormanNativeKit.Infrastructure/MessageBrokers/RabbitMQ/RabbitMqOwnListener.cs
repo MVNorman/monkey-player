@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -7,13 +7,13 @@ using RawRabbit;
 
 namespace MVNormanNativeKit.Infrastructure.MessageBrokers.RabbitMQ
 {
-    public sealed class RabbitMqListener : IEventListener
+    public sealed class RabbitMqOwnListener : IEventListener
     {
         private readonly IBusClient _busClient;
         private readonly IServiceScopeFactory _serviceFactory;
         private readonly RabbitMqOptions _options;
 
-        public RabbitMqListener(
+        public RabbitMqOwnListener(
             IBusClient busClient,
             IOptions<RabbitMqOptions> options,
             IServiceScopeFactory serviceFactory)
@@ -51,6 +51,10 @@ namespace MVNormanNativeKit.Infrastructure.MessageBrokers.RabbitMQ
         }
 
 
+        // public async Task Publish<TEvent>(TEvent @event, string queue) where TEvent : IEvent
+        // {
+        //     _busClient.su
+        // }
         public async Task Publish<TEvent>(TEvent @event) where TEvent : IEvent
         {
             if (@event == null)
