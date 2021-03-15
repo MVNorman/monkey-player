@@ -6,6 +6,7 @@ using MVNormanNativeKit.Infrastructure.MessageBrokers;
 
 namespace MP.Shared.Events
 {
+    //  q2
     public static class EventsExtensions
     {
         public static IApplicationBuilder UseSubscribeAllEvents(this IApplicationBuilder app)
